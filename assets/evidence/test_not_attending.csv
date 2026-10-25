@@ -1,0 +1,4 @@
+Model,Precision (not attending),Recall (not attending),F1 (not attending),AP (not attending),AP (attending)
+Logistic Regression,81.71,64.52,72.1,80.3,97.88
+Decision Tree,65.78,65.37,65.58,49.19,91.73
+Gaussian Naive Bayes,18.0,98.52,30.43,18.01,82.33

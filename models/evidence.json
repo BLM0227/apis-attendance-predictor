@@ -1,0 +1,519 @@
+{
+ "selected_threshold": 0.4,
+ "selection_rule": "Threshold with the highest not-attending F1 on out-of-fold predictions of the training split (Logistic Regression); the test split was not used.",
+ "dataset": {
+  "rows_raw": 72527,
+  "duplicates_removed": 333,
+  "rows_final": 72194,
+  "attending_pct": 82.16,
+  "not_attending_pct": 17.84,
+  "train_rows": 57755,
+  "test_rows": 14439,
+  "train_households": 25295,
+  "test_households": 6316,
+  "household_overlap": 0
+ },
+ "cv_main": [
+  {
+   "Model": "Logistic Regression",
+   "Accuracy (mean)": 91.12,
+   "Accuracy (SD, pp)": 0.09,
+   "Precision (mean)": 92.64,
+   "Recall attending (mean)": 96.89,
+   "Recall not attending (mean)": 64.54,
+   "F1 attending (mean)": 94.72
+  },
+  {
+   "Model": "Decision Tree",
+   "Accuracy (mean)": 87.47,
+   "Accuracy (SD, pp)": 0.39,
+   "Precision (mean)": 92.5,
+   "Recall attending (mean)": 92.22,
+   "Recall not attending (mean)": 65.56,
+   "F1 attending (mean)": 92.36
+  },
+  {
+   "Model": "Gaussian Naive Bayes",
+   "Accuracy (mean)": 19.56,
+   "Accuracy (SD, pp)": 0.25,
+   "Precision (mean)": 86.97,
+   "Recall attending (mean)": 2.47,
+   "Recall not attending (mean)": 98.27,
+   "F1 attending (mean)": 4.81
+  }
+ ],
+ "cv_ap": [
+  {
+   "Model": "Logistic Regression",
+   "AP attending (mean)": 97.89,
+   "AP attending (SD, pp)": 0.13,
+   "AP not attending (mean)": 80.95,
+   "AP not attending (SD, pp)": 0.45
+  },
+  {
+   "Model": "Decision Tree",
+   "AP attending (mean)": 91.7,
+   "AP attending (SD, pp)": 0.14,
+   "AP not attending (mean)": 48.58,
+   "AP not attending (SD, pp)": 0.99
+  },
+  {
+   "Model": "Gaussian Naive Bayes",
+   "AP attending (mean)": 82.29,
+   "AP attending (SD, pp)": 0.03,
+   "AP not attending (mean)": 17.96,
+   "AP not attending (SD, pp)": 0.03
+  }
+ ],
+ "threshold_oof": [
+  {
+   "Threshold": 0.2,
+   "Accuracy": 87.81,
+   "Precision (not attending)": 61.76,
+   "Recall (not attending)": 83.07,
+   "F1 (not attending)": 70.85
+  },
+  {
+   "Threshold": 0.3,
+   "Accuracy": 90.26,
+   "Precision (not attending)": 70.87,
+   "Recall (not attending)": 77.08,
+   "F1 (not attending)": 73.84
+  },
+  {
+   "Threshold": 0.4,
+   "Accuracy": 91.11,
+   "Precision (not attending)": 77.35,
+   "Recall (not attending)": 70.9,
+   "F1 (not attending)": 73.98
+  },
+  {
+   "Threshold": 0.5,
+   "Accuracy": 91.12,
+   "Precision (not attending)": 81.85,
+   "Recall (not attending)": 64.54,
+   "F1 (not attending)": 72.17
+  },
+  {
+   "Threshold": 0.6,
+   "Accuracy": 90.51,
+   "Precision (not attending)": 85.65,
+   "Recall (not attending)": 56.19,
+   "F1 (not attending)": 67.86
+  },
+  {
+   "Threshold": 0.7,
+   "Accuracy": 89.79,
+   "Precision (not attending)": 89.4,
+   "Recall (not attending)": 48.49,
+   "F1 (not attending)": 62.88
+  },
+  {
+   "Threshold": 0.8,
+   "Accuracy": 88.65,
+   "Precision (not attending)": 92.26,
+   "Recall (not attending)": 39.71,
+   "F1 (not attending)": 55.53
+  }
+ ],
+ "threshold_test": [
+  {
+   "Threshold": 0.2,
+   "Accuracy": 87.56,
+   "Precision (not attending)": 61.14,
+   "Recall (not attending)": 83.07,
+   "F1 (not attending)": 70.44
+  },
+  {
+   "Threshold": 0.3,
+   "Accuracy": 90.17,
+   "Precision (not attending)": 70.54,
+   "Recall (not attending)": 77.06,
+   "F1 (not attending)": 73.65
+  },
+  {
+   "Threshold": 0.4,
+   "Accuracy": 90.87,
+   "Precision (not attending)": 76.51,
+   "Recall (not attending)": 70.42,
+   "F1 (not attending)": 73.34
+  },
+  {
+   "Threshold": 0.5,
+   "Accuracy": 91.09,
+   "Precision (not attending)": 81.71,
+   "Recall (not attending)": 64.52,
+   "F1 (not attending)": 72.1
+  },
+  {
+   "Threshold": 0.6,
+   "Accuracy": 90.46,
+   "Precision (not attending)": 85.03,
+   "Recall (not attending)": 56.44,
+   "F1 (not attending)": 67.85
+  },
+  {
+   "Threshold": 0.7,
+   "Accuracy": 89.63,
+   "Precision (not attending)": 88.67,
+   "Recall (not attending)": 47.98,
+   "F1 (not attending)": 62.27
+  },
+  {
+   "Threshold": 0.8,
+   "Accuracy": 88.54,
+   "Precision (not attending)": 92.52,
+   "Recall (not attending)": 38.9,
+   "F1 (not attending)": 54.77
+  }
+ ],
+ "test_overall": [
+  {
+   "Model": "Logistic Regression",
+   "Accuracy": 91.09,
+   "Precision (attending)": 92.63,
+   "Recall (attending)": 96.86,
+   "F1 (attending)": 94.7
+  },
+  {
+   "Model": "Decision Tree",
+   "Accuracy": 87.76,
+   "Precision (attending)": 92.49,
+   "Recall (attending)": 92.62,
+   "F1 (attending)": 92.55
+  },
+  {
+   "Model": "Gaussian Naive Bayes",
+   "Accuracy": 19.64,
+   "Precision (attending)": 88.69,
+   "Recall (attending)": 2.51,
+   "F1 (attending)": 4.89
+  }
+ ],
+ "test_not_attending": [
+  {
+   "Model": "Logistic Regression",
+   "Precision (not attending)": 81.71,
+   "Recall (not attending)": 64.52,
+   "F1 (not attending)": 72.1,
+   "AP (not attending)": 80.3,
+   "AP (attending)": 97.88
+  },
+  {
+   "Model": "Decision Tree",
+   "Precision (not attending)": 65.78,
+   "Recall (not attending)": 65.37,
+   "F1 (not attending)": 65.58,
+   "AP (not attending)": 49.19,
+   "AP (attending)": 91.73
+  },
+  {
+   "Model": "Gaussian Naive Bayes",
+   "Precision (not attending)": 18.0,
+   "Recall (not attending)": 98.52,
+   "F1 (not attending)": 30.43,
+   "AP (not attending)": 18.01,
+   "AP (attending)": 82.33
+  }
+ ],
+ "confusion": {
+  "Logistic Regression": [
+   [
+    1662,
+    914
+   ],
+   [
+    372,
+    11491
+   ]
+  ],
+  "Decision Tree": [
+   [
+    1684,
+    892
+   ],
+   [
+    876,
+    10987
+   ]
+  ],
+  "Gaussian Naive Bayes": [
+   [
+    2538,
+    38
+   ],
+   [
+    11565,
+    298
+   ]
+  ]
+ },
+ "generalization": [
+  {
+   "Model": "Logistic Regression",
+   "Training accuracy": 91.25,
+   "Test accuracy": 91.09,
+   "CV accuracy": 91.12,
+   "Train–test gap (pp)": 0.16
+  },
+  {
+   "Model": "Decision Tree",
+   "Training accuracy": 99.98,
+   "Test accuracy": 87.76,
+   "CV accuracy": 87.47,
+   "Train–test gap (pp)": 12.22
+  },
+  {
+   "Model": "Gaussian Naive Bayes",
+   "Training accuracy": 19.96,
+   "Test accuracy": 19.64,
+   "CV accuracy": 19.56,
+   "Train–test gap (pp)": 0.32
+  }
+ ],
+ "subgroup_age": [
+  {
+   "Age group": "5–9",
+   "n": 3332,
+   "Not attending (n)": 182,
+   "Recall @0.50": 3.3,
+   "Recall @selected": 8.24
+  },
+  {
+   "Age group": "10–12",
+   "n": 2369,
+   "Not attending (n)": 48,
+   "Recall @0.50": 27.08,
+   "Recall @selected": 27.08
+  },
+  {
+   "Age group": "13–15",
+   "n": 2417,
+   "Not attending (n)": 76,
+   "Recall @0.50": 10.53,
+   "Recall @selected": 13.16
+  },
+  {
+   "Age group": "16–18",
+   "n": 2402,
+   "Not attending (n)": 264,
+   "Recall @0.50": 35.61,
+   "Recall @selected": 39.77
+  },
+  {
+   "Age group": "19–24",
+   "n": 3919,
+   "Not attending (n)": 2006,
+   "Recall @0.50": 76.82,
+   "Recall @selected": 83.3
+  }
+ ],
+ "subgroup_region": [
+  {
+   "Region": "Region II - Cagayan Valley",
+   "n": 535,
+   "Not attending (n)": 74,
+   "Recall @0.50": 75.68,
+   "Recall @selected": 82.43
+  },
+  {
+   "Region": "Region XI - Davao",
+   "n": 797,
+   "Not attending (n)": 137,
+   "Recall @0.50": 74.45,
+   "Recall @selected": 78.83
+  },
+  {
+   "Region": "Region IVA - CALABARZON",
+   "n": 729,
+   "Not attending (n)": 143,
+   "Recall @0.50": 74.83,
+   "Recall @selected": 76.92
+  },
+  {
+   "Region": "Region V- Bicol",
+   "n": 890,
+   "Not attending (n)": 116,
+   "Recall @0.50": 67.24,
+   "Recall @selected": 75.86
+  },
+  {
+   "Region": "Region I - Ilocos Region",
+   "n": 532,
+   "Not attending (n)": 98,
+   "Recall @0.50": 74.49,
+   "Recall @selected": 74.49
+  },
+  {
+   "Region": "Region III - Central Luzon",
+   "n": 1086,
+   "Not attending (n)": 211,
+   "Recall @0.50": 68.72,
+   "Recall @selected": 73.93
+  },
+  {
+   "Region": "National Capital Region",
+   "n": 1716,
+   "Not attending (n)": 337,
+   "Recall @0.50": 68.25,
+   "Recall @selected": 73.29
+  },
+  {
+   "Region": "Region XII - SOCCSKSARGEN",
+   "n": 738,
+   "Not attending (n)": 139,
+   "Recall @0.50": 66.91,
+   "Recall @selected": 72.66
+  },
+  {
+   "Region": "Region X - Northern Mindanao",
+   "n": 911,
+   "Not attending (n)": 131,
+   "Recall @0.50": 67.94,
+   "Recall @selected": 71.76
+  },
+  {
+   "Region": "Region VIII - Eastern Visayas",
+   "n": 1011,
+   "Not attending (n)": 172,
+   "Recall @0.50": 67.44,
+   "Recall @selected": 71.51
+  },
+  {
+   "Region": "Region VII - Central Visayas",
+   "n": 726,
+   "Not attending (n)": 150,
+   "Recall @0.50": 64.67,
+   "Recall @selected": 70.67
+  },
+  {
+   "Region": "Cordillera Administrative Region",
+   "n": 789,
+   "Not attending (n)": 118,
+   "Recall @0.50": 56.78,
+   "Recall @selected": 69.49
+  },
+  {
+   "Region": "Region XIII - Caraga",
+   "n": 804,
+   "Not attending (n)": 131,
+   "Recall @0.50": 57.25,
+   "Recall @selected": 67.94
+  },
+  {
+   "Region": "MIMAROPA",
+   "n": 728,
+   "Not attending (n)": 125,
+   "Recall @0.50": 52.0,
+   "Recall @selected": 66.4
+  },
+  {
+   "Region": "Region VI - Western Visayas",
+   "n": 890,
+   "Not attending (n)": 162,
+   "Recall @0.50": 53.7,
+   "Recall @selected": 61.11
+  },
+  {
+   "Region": "BARMM",
+   "n": 951,
+   "Not attending (n)": 188,
+   "Recall @0.50": 55.32,
+   "Recall @selected": 60.64
+  },
+  {
+   "Region": "Region IX - Zamboanga Peninsula",
+   "n": 606,
+   "Not attending (n)": 144,
+   "Recall @0.50": 54.17,
+   "Recall @selected": 55.56
+  }
+ ],
+ "subgroup_sex": [
+  {
+   "Sex": "Male",
+   "n": 7482,
+   "Not attending (n)": 1461,
+   "Recall @0.50": 66.26,
+   "Recall @selected": 71.87
+  },
+  {
+   "Sex": "Female",
+   "n": 6957,
+   "Not attending (n)": 1115,
+   "Recall @0.50": 62.24,
+   "Recall @selected": 68.52
+  }
+ ],
+ "subgroup_residence": [
+  {
+   "Residence": "Urban",
+   "n": 6254,
+   "Not attending (n)": 1164,
+   "Recall @0.50": 64.86,
+   "Recall @selected": 71.13
+  },
+  {
+   "Residence": "Rural",
+   "n": 8185,
+   "Not attending (n)": 1412,
+   "Recall @0.50": 64.24,
+   "Recall @selected": 69.83
+  }
+ ],
+ "age_recall_by_threshold": {
+  "0.20": {
+   "5–9": 18.13,
+   "10–12": 27.08,
+   "13–15": 40.79,
+   "16–18": 51.14,
+   "19–24": 96.11
+  },
+  "0.30": {
+   "5–9": 10.44,
+   "10–12": 27.08,
+   "13–15": 25.0,
+   "16–18": 44.7,
+   "19–24": 90.53
+  },
+  "0.40": {
+   "5–9": 8.24,
+   "10–12": 27.08,
+   "13–15": 13.16,
+   "16–18": 39.77,
+   "19–24": 83.3
+  },
+  "0.50": {
+   "5–9": 3.3,
+   "10–12": 27.08,
+   "13–15": 10.53,
+   "16–18": 35.61,
+   "19–24": 76.82
+  },
+  "0.60": {
+   "5–9": 1.1,
+   "10–12": 25.0,
+   "13–15": 10.53,
+   "16–18": 28.79,
+   "19–24": 67.6
+  },
+  "0.70": {
+   "5–9": 0.0,
+   "10–12": 18.75,
+   "13–15": 9.21,
+   "16–18": 21.97,
+   "19–24": 57.93
+  },
+  "0.80": {
+   "5–9": 0.0,
+   "10–12": 14.58,
+   "13–15": 9.21,
+   "16–18": 12.5,
+   "19–24": 47.61
+  }
+ },
+ "meta": {
+  "sklearn_version": "1.8.0",
+  "generated_utc": "2026-10-24T06:51:46+00:00"
+ }
+}

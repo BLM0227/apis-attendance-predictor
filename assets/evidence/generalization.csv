@@ -1,0 +1,4 @@
+Model,Training accuracy,Test accuracy,CV accuracy,Train–test gap (pp)
+Logistic Regression,91.25,91.09,91.12,0.16
+Decision Tree,99.98,87.76,87.47,12.22
+Gaussian Naive Bayes,19.96,19.64,19.56,0.32

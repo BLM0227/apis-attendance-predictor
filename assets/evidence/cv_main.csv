@@ -1,0 +1,4 @@
+Model,Accuracy (mean),"Accuracy (SD, pp)",Precision (mean),Recall attending (mean),Recall not attending (mean),F1 attending (mean)
+Logistic Regression,91.12,0.09,92.64,96.89,64.54,94.72
+Decision Tree,87.47,0.39,92.5,92.22,65.56,92.36
+Gaussian Naive Bayes,19.56,0.25,86.97,2.47,98.27,4.81

@@ -1,0 +1,4 @@
+Model,Accuracy,Precision (attending),Recall (attending),F1 (attending)
+Logistic Regression,91.09,92.63,96.86,94.7
+Decision Tree,87.76,92.49,92.62,92.55
+Gaussian Naive Bayes,19.64,88.69,2.51,4.89
