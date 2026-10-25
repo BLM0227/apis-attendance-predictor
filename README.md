@@ -51,7 +51,7 @@ streamlit run app.py
 ## Deployment (Streamlit Community Cloud)
 1. Commit `models/` (small) so the hosted app can load the pipelines and evidence; do **not** commit the raw CSV.
 2. Push to GitHub, then at https://share.streamlit.io select the repo, branch and `app.py`.
-3. Deployed URL: **\<add URL here\>**
+3. Deployed URL: **https://apis-attendance-predictor.streamlit.app/**
 
 ## Notes
 - Artifacts were trained with scikit-learn 1.8.0 (pinned). The app warns if the installed version differs.
